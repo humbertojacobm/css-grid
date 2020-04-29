@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Tamaño de item de columnas</title>
+      <style>
+          body{
+              font-family: Arial;
+          }
+          .container{
+              display: grid;   
+              grid-template-columns: repeat(3,1fr);   
+              grid-template-rows: repeat(4,1fr);      
+              grid-gap: 10px;
+              height: 100vh;
+          }
+          .item {
+              background: lightblue;
+              padding: 10px;
+              border: 1px solid red;
+              /* margin-right: 10px;
+              margin-bottom: 10px; */
+          }
+          .item:nth-of-type(4) {
+            background: blue;
+            overflow: auto;
+            /* display: subgrid; */
+            display: inline-grid;
+            display: grid;
+            grid-template: 50px 50px 50px  / 200px 200px 200px;
+          }
+          .item .item{
+              background-color: yellow;
+          }
+          .header{
+             grid-area: header;
+          }
+          .left{
+            grid-area: left;
+          }
+          .contenido{
+            grid-area: contenido;
+          }
+          .footer{
+            grid-area: footer;
+          }
+      </style>
+    </head>
+    <body>
+       <section class="container">
+           <div class="item">item #1</div>
+           <div class="item">item #2</div>
+           <div class="item">item #3</div>
+           <div class="item">item #4</div>
+           <div class="item">item #5</div>
+           <div class="item">item #6</div>
+           <div class="item">item #7</div>
+           <div class="item">item #8</div>
+           <div class="item">item #9</div>
+           <div class="item">item #10</div>
+           <div class="item">item #11</div>
+           <div class="item">item #12</div>
+       </section>
+    </body>
+</html>
