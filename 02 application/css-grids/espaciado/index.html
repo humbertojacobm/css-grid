@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
       <meta charset="UTF-8">
-      <title>Columnas</title>
+      <title>Gap</title>
       <style>
           body{
               font-family: Arial;
@@ -13,11 +13,17 @@
               grid-template-rows: 300px 150px;       */
               /* grid-template: filas / columnas; */
               grid-template: 300px 100px 100px  / 50% 200px 100px;
+              grid-column-gap: 30px;
+              grid-row-gap: 30px;
+              /* grid-gap: filas columnas; */
+              grid-gap: 10px 100px;
           }
           .item {
               background: lightblue;
               padding: 10px;
               border: 1px solid red;
+              /* margin-right: 10px;
+              margin-bottom: 10px; */
           }
           .item:nth-of-type(4) {
             background: blue;
