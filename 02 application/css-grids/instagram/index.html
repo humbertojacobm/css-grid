@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Instragram</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial;
+        }
+        .post {
+            cursor: pointer;    
+            position: relative;        
+        }
+        .post-image{
+            margin: 0;
+        }
+        .post-image img{
+            width: 100%;
+            vertical-align: top;
+        }
+        .post-overlay{
+            background: rgba(0,0,0, .4);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: none;
+        }
+
+        .post:hover .post-overlay {
+          
+        }
+    </style>
+</head>
+<body>
+    <section class="post-list">
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="compu.jpg" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">150</span>
+                    <span class="post-comments">150</span>
+                </p>
+            </span>
+        </a>
+    </section>
+</body>
+</html>
