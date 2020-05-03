@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Movi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <style>
+      body{
+        font-family: 'Lato', sans-serif;
+      }
+      .hero{
+        display: grid;
+        grid-template-columns: 100px auto;        
+        grid-template-rows: 50px 1024px;
+        grid-template-areas: "header   header"
+                             "menu     movies"
+                               ;
+        grid-gap: 10px;
+      }
+        .header{
+          grid-area: header;
+          display:grid;
+          grid-template-columns: 300px 1fr 300px;
+          grid-gap: 10px;                   
+        } 
+          .logo{
+            width: 150px;
+            height: 50px;
+          }
+          .search{
+            height: 25px;
+            border-radius: 10px;
+            align-self: center;
+          }
+          .user{
+            justify-self:end;
+            align-self: center;
+            display: grid;
+            grid-template-columns: 6fr 2fr 1fr;
+            justify-items: center;
+            align-items: center;
+          } 
+            .user-logo{
+              height: 50px;
+            }
+            .icon-down-row{
+              height: 12px;
+            }
+                
+      .menu{
+        background-color:crimson;
+        grid-area: menu;
+      }
+      .movies{
+        grid-area: movies;
+      }
+      @media screen and (max-width: 940px){
+        .hero{
+              grid-template-columns: 100px; 
+              grid-template-rows: auto;       
+              grid-template-areas: "header"
+                                   "menu"
+                                   "movies"
+                                    ;              
+        }   
+          .header{
+            grid-template-columns: 100px;
+            grid-template-rows: auto;
+          }   
+            .user{
+               grid-template-columns: 100px;  
+            }
+      }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <section class="header">
+           <img src="logo.png" 
+                alt="logo"
+                class="logo">
+           <input type="text" 
+                  name="" 
+                  id=""
+                  placeholder="Busca tu peli, actor, actriz o director favorito"
+                  class="search">
+           <div class="user">
+             <span>
+               Bambi Rodriguez
+             </span>
+             <img src="user-logo.png" 
+                  alt="user logo"
+                  class="user-logo">
+             <span>
+                <img src="icons/multimedia-option.png" 
+                     alt="icon"
+                     class="icon-down-row">
+             </span>
+           </div>
+        </section>
+        <section class="menu">
+          <div class="home">
+            <!-- <img src="icons/home.png" 
+            alt=""> -->
+          </div>
+          <div class="trending">
+           <!-- <img src="icons/fire.png" 
+           alt=""> -->
+         </div>
+         <div class="likes">
+           <!-- <img src="icons/heart.png" 
+           alt=""> -->
+         </div>           
+        </section>
+        <section class="movies">
+           <div class="cine">
+             
+           </div>
+           <div class="critica">
+
+           </div>
+           <div class="perder">
+
+           </div>
+        </section>
+    </div>
+</body>
+</html>
