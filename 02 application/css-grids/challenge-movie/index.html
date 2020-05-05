@@ -13,7 +13,7 @@
       .hero{
         display: grid;
         grid-template-columns: 100px auto;        
-        grid-template-rows: 50px 850px;
+        grid-template-rows: 50px 900px;
         grid-template-areas: "header   header"
                              "menu     movies"
                                ;
@@ -69,6 +69,9 @@
       }
       .movies{
         grid-area: movies;
+        display: grid;
+        grid-template-columns: repeat(3,350px);
+        grid-template-rows: repeat(3,300px);
       }
       @media screen and (max-width: 940px){
         .hero{
