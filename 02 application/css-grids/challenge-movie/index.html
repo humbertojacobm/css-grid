@@ -73,9 +73,22 @@
         grid-template-columns: 1050px;
         grid-template-rows: repeat(3,300px);
       }
+      .movies .card .card-container{
+        position: absolute;
+      }
+      .movies .card .card-container .card-movie-detail{
+        position: absolute;
+        top:60px;
+        opacity: 0.8;
+      }
       .movies .card-img{
         width: 300px;
         height: 200px;
+      }
+      .movies .card-movie-detail{
+        background-color: tomato;
+        color: white; 
+        width: 300px;       
       }
       @media screen and (max-width: 940px){
         .hero{
@@ -161,9 +174,21 @@
                Ahora en el Cine
              </p>
              <div class="card">
-               <img src="assets/cards/justice-league-movie-team-photo.jpg" 
+               <div class="card-container">
+                <div class="card-img">
+                    <img src="assets/cards/justice-league-movie-team-photo.jpg" 
                     alt=""
                     class="card-img">
+                </div>
+                <div class="card-movie-detail">
+                  <p>
+                    What is Lorem Ipsum?
+                  </p>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
+                </div>
+               </div>               
              </div>
            </div>
            <div class="critica">
