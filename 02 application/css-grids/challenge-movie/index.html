@@ -71,7 +71,7 @@
         grid-area: movies;
         display: grid;
         grid-template-columns: 1050px;
-        grid-template-rows: repeat(3,300px);
+        grid-template-rows: 50px 250px 50px 250px 50px 250px ;
       }
       .movies .card .card-container{
         position: absolute;
@@ -89,6 +89,10 @@
         background-color: tomato;
         color: white; 
         width: 300px;       
+      }
+      .movies .grid-auto-flow-column{
+        display:grid;
+        grid-auto-flow: column;
       }
       @media screen and (max-width: 940px){
         .hero{
@@ -169,10 +173,10 @@
         </div>           
         </section>
         <section class="movies">
-           <div class="cine">
-             <p>
-               Ahora en el Cine
-             </p>
+           <p>          
+              Ahora en el Cine            
+            </p> 
+           <div class="cine grid-auto-flow-column">
              <div class="card">
                <div class="card-container">
                 <div class="card-img">
@@ -190,12 +194,152 @@
                 </div>
                </div>               
              </div>
+             <div class="card">
+              <div class="card-container">
+               <div class="card-img">
+                   <img src="assets/cards/justice-league-movie-team-photo.jpg" 
+                   alt=""
+                   class="card-img">
+               </div>
+               <div class="card-movie-detail">
+                 <p>
+                   What is Lorem Ipsum?
+                 </p>
+                 <p>
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                 </p>
+               </div>
+              </div>               
+            </div>
+            <div class="card">
+              <div class="card-container">
+               <div class="card-img">
+                   <img src="assets/cards/justice-league-movie-team-photo.jpg" 
+                   alt=""
+                   class="card-img">
+               </div>
+               <div class="card-movie-detail">
+                 <p>
+                   What is Lorem Ipsum?
+                 </p>
+                 <p>
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                 </p>
+               </div>
+              </div>               
+            </div>
            </div>
-           <div class="critica">
-
+           <p>          
+              Aclamadas por la crítica         
+          </p>            
+           <div class="critica grid-auto-flow-column">
+            <div class="card">
+              <div class="card-container">
+               <div class="card-img">
+                   <img src="assets/cards/justice-league-movie-team-photo.jpg" 
+                   alt=""
+                   class="card-img">
+               </div>
+               <div class="card-movie-detail">
+                 <p>
+                   What is Lorem Ipsum?
+                 </p>
+                 <p>
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                 </p>
+               </div>
+              </div>               
+            </div>
+            <div class="card">
+             <div class="card-container">
+              <div class="card-img">
+                  <img src="assets/cards/justice-league-movie-team-photo.jpg" 
+                  alt=""
+                  class="card-img">
+              </div>
+              <div class="card-movie-detail">
+                <p>
+                  What is Lorem Ipsum?
+                </p>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+              </div>
+             </div>               
            </div>
-           <div class="perder">
-
+           <div class="card">
+             <div class="card-container">
+              <div class="card-img">
+                  <img src="assets/cards/justice-league-movie-team-photo.jpg" 
+                  alt=""
+                  class="card-img">
+              </div>
+              <div class="card-movie-detail">
+                <p>
+                  What is Lorem Ipsum?
+                </p>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+              </div>
+             </div>               
+           </div>
+           </div>
+           <p>          
+             No te debes perder        
+           </p>            
+           <div class="perder grid-auto-flow-column">
+            <div class="card">
+              <div class="card-container">
+               <div class="card-img">
+                   <img src="assets/cards/justice-league-movie-team-photo.jpg" 
+                   alt=""
+                   class="card-img">
+               </div>
+               <div class="card-movie-detail">
+                 <p>
+                   What is Lorem Ipsum?
+                 </p>
+                 <p>
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                 </p>
+               </div>
+              </div>               
+            </div>
+            <div class="card">
+             <div class="card-container">
+              <div class="card-img">
+                  <img src="assets/cards/justice-league-movie-team-photo.jpg" 
+                  alt=""
+                  class="card-img">
+              </div>
+              <div class="card-movie-detail">
+                <p>
+                  What is Lorem Ipsum?
+                </p>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+              </div>
+             </div>               
+           </div>
+           <div class="card">
+             <div class="card-container">
+              <div class="card-img">
+                  <img src="assets/cards/justice-league-movie-team-photo.jpg" 
+                  alt=""
+                  class="card-img">
+              </div>
+              <div class="card-movie-detail">
+                <p>
+                  What is Lorem Ipsum?
+                </p>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+              </div>
+             </div>               
+           </div>
            </div>
         </section>
     </div>
