@@ -90,9 +90,9 @@
         color: white; 
         width: 300px;       
       }
-      .movies .grid-auto-flow-column{
-        display:grid;
-        grid-auto-flow: column;
+      .movies .movie-list{
+        display: grid;
+        grid-template-columns: repeat(3,350px);
       }
       @media screen and (max-width: 940px){
         .hero{
@@ -103,13 +103,20 @@
                                    "movies"
                                     ;              
         }   
-          .header{
-            grid-template-columns: 100px;
-            grid-template-rows: auto;
-          }   
-            .user{
-               grid-template-columns: 100px;  
-            }
+        .hero .header{
+          grid-template-columns: 100px;
+          grid-template-rows: auto;
+        }   
+        .hero .header  .user{
+            grid-template-columns: 100px;  
+        }
+        .movies{
+          grid-template-columns: 350px;
+          grid-template-rows: auto 900px auto 900px auto 900px;
+        }
+        .movies .movie-list{          
+          grid-template-columns: auto;
+        }               
       }
     </style>
 </head>
@@ -176,7 +183,7 @@
            <p>          
               Ahora en el Cine            
             </p> 
-           <div class="cine grid-auto-flow-column">
+           <div class="cine movie-list">
              <div class="card">
                <div class="card-container">
                 <div class="card-img">
@@ -232,7 +239,7 @@
            <p>          
               Aclamadas por la crítica         
           </p>            
-           <div class="critica grid-auto-flow-column">
+           <div class="critica movie-list">
             <div class="card">
               <div class="card-container">
                <div class="card-img">
@@ -288,7 +295,7 @@
            <p>          
              No te debes perder        
            </p>            
-           <div class="perder grid-auto-flow-column">
+           <div class="perder movie-list">
             <div class="card">
               <div class="card-container">
                <div class="card-img">
