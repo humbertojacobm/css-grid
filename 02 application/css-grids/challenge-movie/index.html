@@ -13,7 +13,7 @@
       .hero{
         display: grid;
         grid-template-columns: 100px auto;        
-        grid-template-rows: 50px 1024px;
+        grid-template-rows: 50px 850px;
         grid-template-areas: "header   header"
                              "menu     movies"
                                ;
@@ -52,6 +52,19 @@
       .menu{
         background-color:crimson;
         grid-area: menu;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px 1fr;
+        justify-items: center;
+      }
+      .menu .setting{
+        align-self: flex-end;
+      }
+      .menu-item-icon{
+        width: 50px;
+      }
+      .menu-item-text{
+        color: white;        
       }
       .movies{
         grid-area: movies;
@@ -102,20 +115,36 @@
         </section>
         <section class="menu">
           <div class="home">
-            <!-- <img src="icons/home.png" 
-            alt=""> -->
+            <img src="icons/home.png" 
+                 alt=""
+                 class="menu-item-icon">
+            <p class="menu-item-text">
+              Home
+            </p>
           </div>
           <div class="trending">
-           <!-- <img src="icons/fire.png" 
-           alt=""> -->
+           <img src="icons/fire.png" 
+                alt=""
+                class="menu-item-icon">
+          <p class="menu-item-text">
+            Trending
+          </p>
          </div>
          <div class="likes">
-           <!-- <img src="icons/heart.png" 
-           alt=""> -->
+           <img src="icons/heart.png" 
+                alt=""
+                class="menu-item-icon">
+            <p class="menu-item-text">
+              Mas Likes
+            </p>
          </div> 
          <div class="setting">
           <img src="icons/setting.png" 
-               alt="">
+               alt=""
+               class="menu-item-icon">
+          <p class="menu-item-text">
+            Setting
+          </p>
         </div>           
         </section>
         <section class="movies">
